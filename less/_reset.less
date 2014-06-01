@@ -1,0 +1,311 @@
+// HTML5 Reset
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+// Show controls for audio, remove excess height
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+[hidden] {
+    display: none;
+}
+
+// Correct text sizing
+
+html {
+    font-size: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%; 
+}
+
+// Consistent fonts
+
+html,
+button,
+input,
+select,
+textarea {
+    font-family: 'Georgia', serif;
+}
+
+body {
+    background: @bg-color;
+    margin: 0;
+    line-height: @rhythm;
+    color: @text-color;
+}
+
+::-moz-selection {
+    background: @blue;
+    color: @white;
+}
+
+::selection {
+    background: @blue;
+    color: @white;
+}
+
+a {
+    color: @blue;
+    text-decoration: none;
+    border-bottom: 1px dotted fade(@blue,50%);
+    &:focus {
+        outline: thin dotted;
+    }
+    &:active,
+    &:hover {
+        outline: 0;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    margin: 0;
+}
+
+h1, h2 {
+    text-rendering: optimizeLegibility;
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+    font-size: 1em;
+}
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+
+// Styling
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    margin: 0 0 1.7em;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+q {
+    quotes: none;
+    &:before,
+    &:after {
+        content: '';
+        content: none;
+    }
+}
+
+nav ul,
+nav ol {
+    list-style: none;
+    list-style-image: none;
+}
+
+// Consistent cross-browser bold styling
+
+b,
+strong {
+    font-weight: bold;
+}
+
+// Consistent Padding
+
+@blockquote-border: 4px;
+@blockquote-padding: @rhythm;
+
+blockquote {
+    padding: 0 0 0 @blockquote-padding;
+    margin: 0;
+    border-left: @blockquote-border solid fade(@text-color, 20%);
+    box-sizing: border-box;
+}
+
+p,
+pre {
+    margin: 0;
+}
+
+dl,
+menu,
+ol,
+ul {
+    margin: 1.7em 0;
+}
+
+dd {
+    margin: 0 0 0 40px;
+}
+
+menu,
+ol,
+ul {
+    padding: 0 0 0 0;
+}
+
+figure {
+    margin: 0;
+}
+
+form {
+    margin: 0;
+}
+
+fieldset {
+    border: 1px solid @text-color;
+    margin: 0;
+    padding: 0;
+}
+
+legend {
+    border: 0; 
+    padding: 0;
+    white-space: normal;
+    *margin-left: -7px; 
+}
+
+
+// Sub / sup
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+// Remove border for images with links
+
+img {
+    border: 0; 
+    -ms-interpolation-mode: bicubic;
+}
+
+// Correct IE9 overflow bug
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+
+// Forms
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+    *vertical-align: middle;
+}
+
+button,
+input {
+    line-height: normal;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+html input[type="button"], 
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+    *overflow: visible;
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+    *height: 13px;
+    *width: 13px;
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+button, .button {
+    background: @blue;
+    color: @white;
+    text-align: center;
+    border: 0;
+    transition: background 0.1s ease-out;
+    &:focus {
+        outline: 0;
+    }
+    &:focus, &:hover {
+        background: darken(@blue,5%);
+    }
+}

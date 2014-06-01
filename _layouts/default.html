@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    {% include banner.html %}
+    <div class="wrapper content detr">
+        <h2>{{ page.title }}</h2>
+        {{ content }}
+        
+        {% for post in paginator.posts %}
+          <article class="detr-post">
+
+           {% if post.layout == 'text' %}
+            <h4>{{ post.title }}</h4>
+
+            {{ post.content }}
+          {% endif %}
+
+          {% if post.layout == 'image' %}
+            <a href="/images/{{ post.image-source }}" class="detr-img-link"><img src=" /images/{{ post.image-source }}"></a>
+            
+            {{ post.content }}
+          {% endif %}
+
+          {% if post.layout == 'video' %}
+            <figure>
+              {{ post.video-source }}
+              <figcaption>{{ post.title }}</figcaption>
+            </figure>
+            {{ post.content }}
+          {% endif %}
+           
+          {% if post.layout == 'quote' %}
+            <figure class="quote">
+              <blockquote>{{ post.quote-body }}</blockquote>
+              {% if post.quote-link %}
+                <figcaption><a href="{{post.quote-link}}">{{ post.quote-source }}</a></figcaption>
+                {% else %}
+                <figcaption>{{ post.quote-source }}</figcaption>
+              {% endif %}
+            </figure>
+            {{ post.content }}
+          {% endif %}
+
+          {% if post.layout == 'link' %}
+            <h4><a href="{{ post.linkurl }}">{{ post.title}}</a></h4>
+            {{ post.content }}
+          {% endif %}
+        </article>
+       {% endfor %}
+
+       <p class="pagination">
+        {% if paginator.previous_page %}
+          <a href="/detritus/page{{ paginator.previous_page }}" class="prev-page">Previous</a>
+          {% else %}
+        {% endif %}
+        <span class="page-num">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+        {% if paginator.next_page %}
+           <a href="/detritus/page{{ paginator.next_page }}" class="next-page">Next</a>
+          {% else %}
+        {% endif %}
+      </p>
+      </div>
+  </body>
+</html>

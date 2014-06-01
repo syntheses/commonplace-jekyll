@@ -1,0 +1,9 @@
+# Site settings
+title: Commonplace Book
+email: your-email@domain.com
+
+# Build settings
+baseurl: /
+permalink: /posts/:title/
+paginate: 10
+paginate_path: "posts/page:num"
