@@ -1,0 +1,179 @@
+@import "_reset.less";
+@import "_includes.less";
+
+figure {
+	padding-bottom: @rhythm;
+}
+
+// Post pagination
+
+.pagination {
+	position: relative;
+}
+
+.prev-page,
+.next-page {
+	position: absolute;
+	top: 0;
+}
+
+.prev-page {
+	left: 0;
+}
+
+.page-num {
+	text-align: center;
+	display: block;
+}
+
+.next-page {
+	right: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+.wrapper {
+	width: 92%;
+	max-width: 28em;
+	margin: 0 4%;
+	position: relative;
+	&.content {
+		margin: @rhythm 4%;
+	}
+}
+
+p {
+	margin-bottom: @rhythm;
+}
+
+p, h3, li {
+	.font-smoothing;
+}
+
+h1, h2 {
+	text-rendering: optimizelegibility;
+}
+
+h1, h2 {
+	color: @text-color;
+	font-weight: normal;
+}
+
+.banner {
+	.wrapper {
+		border-bottom: 1px solid fade(@text-color, 75%);
+	}
+}
+
+h1 {
+	.golden-size();
+	font-family: Baskerville, Georgia, serif;
+	letter-spacing: -0.04em;
+	font-weight: bold;
+	opacity: 0.9;
+	line-height: @rhythm * 3 / 1.618;
+	margin: 0;
+	.font-smoothing;
+	a {
+		border: 0;
+		color: @text-color;
+		&:hover, &:focus {
+			color: lighten(@blue,10%);
+		}
+	}
+}
+
+.fontface {
+	h2, 
+	.nav-top {
+		font-weight: normal;	
+	}
+}
+
+li {
+	list-style-position: inside;
+}
+
+// Fluid videos
+
+.video-box {
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%;
+	height: 0;
+	margin-bottom: @rhythm;
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	&.video-box-liquify {
+		padding-bottom: 67.67%;
+	}
+}
+
+// Detritus
+
+.detr-post {
+	position: relative;
+	.group;
+	border: 1px solid fade(@text-color,10%);
+	background: fade(@text-color,3%);
+	padding: @rhythm @rhythm 0;
+	margin-bottom: @rhythm;
+	h4 {
+		font-size: 100%;
+		line-height: @rhythm / 1.2;
+		.font-smoothing;
+		font-weight: bold;
+		margin-bottom: @rhythm;
+	}
+	li {
+		list-style: circle inside;
+	}
+	figcaption {
+		display: block;
+		margin-top: @rhythm;
+		margin-left: @blockquote-border;
+		padding-left:@blockquote-padding;
+		position: relative;
+		&:before {
+			content: "\2014";
+			position: absolute;
+			top: 0;
+			left: 0;
+			color: fade(@text-color,50%);
+		}
+	}
+}
+
+.detr-img-link {
+	border: 0;
+}
+
+.only-lg {
+	display: none;
+}
+
+@media screen and (min-width: 35em) {
+	.only-sm {
+		display: none;
+	}
+	.only-lg {
+		display: block;
+	}
+	.wrapper {
+		margin: 0 auto;
+		&.content {
+			margin: 0 auto @rhythm * 2;
+		}
+	}
+	.banner {
+		text-align: center;
+		margin-bottom: @rhythm;
+	}
+}

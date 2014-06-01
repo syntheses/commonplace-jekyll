@@ -1,0 +1,415 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden] {
+  display: none;
+}
+html {
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+html,
+button,
+input,
+select,
+textarea {
+  font-family: 'Georgia', serif;
+}
+body {
+  background: #f7f7f7;
+  margin: 0;
+  line-height: 1.75em;
+  color: #333333;
+}
+::-moz-selection {
+  background: #2592d6;
+  color: #ffffff;
+}
+::selection {
+  background: #2592d6;
+  color: #ffffff;
+}
+a {
+  color: #2592d6;
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(37, 146, 214, 0.5);
+}
+a:focus {
+  outline: thin dotted;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  margin: 0;
+}
+h1,
+h2 {
+  text-rendering: optimizeLegibility;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+  margin: 0 0 1.7em;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+q {
+  quotes: none;
+}
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+b,
+strong {
+  font-weight: bold;
+}
+blockquote {
+  padding: 0 0 0 1.75em;
+  margin: 0;
+  border-left: 4px solid rgba(51, 51, 51, 0.2);
+  box-sizing: border-box;
+}
+p,
+pre {
+  margin: 0;
+}
+dl,
+menu,
+ol,
+ul {
+  margin: 1.7em 0;
+}
+dd {
+  margin: 0 0 0 40px;
+}
+menu,
+ol,
+ul {
+  padding: 0 0 0 0;
+}
+figure {
+  margin: 0;
+}
+form {
+  margin: 0;
+}
+fieldset {
+  border: 1px solid #333333;
+  margin: 0;
+  padding: 0;
+}
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+button,
+input {
+  line-height: normal;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  *overflow: visible;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+button,
+.button {
+  background: #2592d6;
+  color: #ffffff;
+  text-align: center;
+  border: 0;
+  transition: background 0.1s ease-out;
+}
+button:focus,
+.button:focus {
+  outline: 0;
+}
+button:focus,
+.button:focus,
+button:hover,
+.button:hover {
+  background: #2183c0;
+}
+figure {
+  padding-bottom: 1.75em;
+}
+.pagination {
+  position: relative;
+}
+.prev-page,
+.next-page {
+  position: absolute;
+  top: 0;
+}
+.prev-page {
+  left: 0;
+}
+.page-num {
+  text-align: center;
+  display: block;
+}
+.next-page {
+  right: 0;
+}
+img {
+  max-width: 100%;
+}
+.wrapper {
+  width: 92%;
+  max-width: 28em;
+  margin: 0 4%;
+  position: relative;
+}
+.wrapper.content {
+  margin: 1.75em 4%;
+}
+p {
+  margin-bottom: 1.75em;
+}
+p,
+h3,
+li {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1,
+h2 {
+  text-rendering: optimizelegibility;
+}
+h1,
+h2 {
+  color: #333333;
+  font-weight: normal;
+}
+.banner .wrapper {
+  border-bottom: 1px solid rgba(51, 51, 51, 0.75);
+}
+h1 {
+  font-size: 1.618em;
+  font-family: Baskerville, Georgia, serif;
+  letter-spacing: -0.04em;
+  font-weight: bold;
+  opacity: 0.9;
+  line-height: 3.2447466em;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1 a {
+  border: 0;
+  color: #333333;
+}
+h1 a:hover,
+h1 a:focus {
+  color: #4ea8e0;
+}
+.fontface h2,
+.fontface .nav-top {
+  font-weight: normal;
+}
+li {
+  list-style-position: inside;
+}
+.video-box {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin-bottom: 1.75em;
+}
+.video-box iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.video-box.video-box-liquify {
+  padding-bottom: 67.67%;
+}
+.detr-post {
+  position: relative;
+  border: 1px solid rgba(51, 51, 51, 0.1);
+  background: rgba(51, 51, 51, 0.03);
+  padding: 1.75em 1.75em 0;
+  margin-bottom: 1.75em;
+}
+.detr-post:before,
+.detr-post:after {
+  content: "";
+  display: table;
+}
+.detr-post:after {
+  clear: both;
+}
+.detr-post h4 {
+  font-size: 100%;
+  line-height: 1.45833333em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: bold;
+  margin-bottom: 1.75em;
+}
+.detr-post li {
+  list-style: circle inside;
+}
+.detr-post figcaption {
+  display: block;
+  margin-top: 1.75em;
+  margin-left: 4px;
+  padding-left: 1.75em;
+  position: relative;
+}
+.detr-post figcaption:before {
+  content: "\2014";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: rgba(51, 51, 51, 0.5);
+}
+.detr-img-link {
+  border: 0;
+}
+.only-lg {
+  display: none;
+}
+@media screen and (min-width: 35em) {
+  .only-sm {
+    display: none;
+  }
+  .only-lg {
+    display: block;
+  }
+  .wrapper {
+    margin: 0 auto;
+  }
+  .wrapper.content {
+    margin: 0 auto 3.5em;
+  }
+  .banner {
+    text-align: center;
+    margin-bottom: 1.75em;
+  }
+}
