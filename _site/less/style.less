@@ -116,15 +116,13 @@ li {
 	}
 }
 
-// Detritus
+// Posts
 
-.detr-post {
+.commonplace-post {
 	position: relative;
 	.group;
-	border: 1px solid fade(@text-color,10%);
-	background: fade(@text-color,3%);
 	padding: @rhythm @rhythm 0;
-	margin-bottom: @rhythm;
+	margin-bottom: @rhythm * 3;
 	h4 {
 		font-size: 100%;
 		line-height: @rhythm / 1.2;
@@ -149,9 +147,15 @@ li {
 			color: fade(@text-color,50%);
 		}
 	}
+	time {
+		font-size: 0.75em;
+		float: right;
+		color: #888;
+		.font-smoothing;
+	}
 }
 
-.detr-img-link {
+.commonplace-img-link {
 	border: 0;
 }
 

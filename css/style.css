@@ -349,22 +349,20 @@ li {
 .video-box.video-box-liquify {
   padding-bottom: 67.67%;
 }
-.detr-post {
+.commonplace-post {
   position: relative;
-  border: 1px solid rgba(51, 51, 51, 0.1);
-  background: rgba(51, 51, 51, 0.03);
   padding: 1.75em 1.75em 0;
-  margin-bottom: 1.75em;
+  margin-bottom: 5.25em;
 }
-.detr-post:before,
-.detr-post:after {
+.commonplace-post:before,
+.commonplace-post:after {
   content: "";
   display: table;
 }
-.detr-post:after {
+.commonplace-post:after {
   clear: both;
 }
-.detr-post h4 {
+.commonplace-post h4 {
   font-size: 100%;
   line-height: 1.45833333em;
   -webkit-font-smoothing: antialiased;
@@ -372,24 +370,31 @@ li {
   font-weight: bold;
   margin-bottom: 1.75em;
 }
-.detr-post li {
+.commonplace-post li {
   list-style: circle inside;
 }
-.detr-post figcaption {
+.commonplace-post figcaption {
   display: block;
   margin-top: 1.75em;
   margin-left: 4px;
   padding-left: 1.75em;
   position: relative;
 }
-.detr-post figcaption:before {
+.commonplace-post figcaption:before {
   content: "\2014";
   position: absolute;
   top: 0;
   left: 0;
   color: rgba(51, 51, 51, 0.5);
 }
-.detr-img-link {
+.commonplace-post time {
+  font-size: 0.75em;
+  float: right;
+  color: #888;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.commonplace-img-link {
   border: 0;
 }
 .only-lg {
