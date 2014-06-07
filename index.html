@@ -19,7 +19,9 @@ layout: default
 
   {% if post.layout == 'video' %}
     <figure>
-      {{ post.video-source }}
+      <div class="video-box">
+        {{ post.video-source }}
+      </div>
       <figcaption>{{ post.title }}</figcaption>
     </figure>
     {{ post.content }}
