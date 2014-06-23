@@ -1,6 +1,6 @@
 ---
-layout: quote
-class: quote
+layout: post
+type: quote
 title: What if we actually lacked a shared language to critically discuss web design? Art, architecture, and even graphic design, have critics and 
 quote-body: What if we actually lacked a shared language to critically discuss web design? Art, architecture, and even graphic design, have critics and historians that give context to new work through the lenses of culture and important work from the past. So where does a common language for discourse start? Not just one for us as web designers, but one that will give structure to others who don’t as deeply understand what we do?
 quote-source: Jason Santa Maria

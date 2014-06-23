@@ -1,0 +1,11 @@
+{% if page.path contains '_posts' %}
+
+	<h4><a href="{{ page.linkurl }}">{{ page.title}}</a></h4>
+	{{ content }}
+
+	{% else %}
+
+	<h4><a href="{{ post.linkurl }}">{{ post.title}}</a></h4>
+	{{ post.content }}
+
+{% endif %}

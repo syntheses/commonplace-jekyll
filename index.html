@@ -5,45 +5,28 @@ layout: default
 {% for post in paginator.posts %}
   <article class="commonplace-post">
 
-   {% if post.layout == 'text' %}
-    <h4>{{ post.title }}</h4>
-
-    {{ post.content }}
+  {% if post.type == 'text' %}
+      {% include text.html %}
   {% endif %}
 
-  {% if post.layout == 'image' %}
-    <a href="/images/{{ post.image-source }}" class="commonplace-img-link"><img src=" /images/{{ post.image-source }}"></a>
-    
-    {{ post.content }}
+  {% if post.type == 'image' %}
+    {% include image.html %}
   {% endif %}
 
-  {% if post.layout == 'video' %}
-    <figure>
-      <div class="video-box">
-        {{ post.video-source }}
-      </div>
-      <figcaption>{{ post.title }}</figcaption>
-    </figure>
-    {{ post.content }}
+  {% if post.type == 'video' %}
+    {% include video.html %}
   {% endif %}
    
-  {% if post.layout == 'quote' %}
-    <figure class="quote">
-      <blockquote>{{ post.quote-body }}</blockquote>
-      {% if post.quote-link %}
-        <figcaption><a href="{{post.quote-link}}">{{ post.quote-source }}</a></figcaption>
-        {% else %}
-        <figcaption>{{ post.quote-source }}</figcaption>
-      {% endif %}
-    </figure>
-    {{ post.content }}
+  {% if post.type == 'quote' %}
+    {% include quote.html %}
   {% endif %}
 
-  {% if post.layout == 'link' %}
-    <h4><a href="{{ post.linkurl }}">{{ post.title}}</a></h4>
-    {{ post.content }}
+  {% if post.type == 'link' %}
+    {% include link.html %}
   {% endif %}
-  <time datetime="{{ post.date | %Y-%m-%d %H:%M }}" pubdate>{{ post.date | date: "%m/%d/%y %I:%M" }}</time>
+  <a href="{{ post.url }}">
+    <time datetime="{{ post.date | %Y-%m-%d %H:%M }}" pubdate>{{ post.date | date: "%B %-d, %Y %I:%M %p" }}</time>
+  </a>
 </article>
 {% endfor %}
 

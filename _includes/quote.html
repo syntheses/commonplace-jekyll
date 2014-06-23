@@ -1,0 +1,25 @@
+{% if page.path contains '_posts' %}
+	
+	<figure class="quote">
+	  <blockquote>{{ page.quote-body }}</blockquote>
+	  {% if page.quote-link %}
+	    <figcaption><a href="{{page.quote-link}}">{{ page.quote-source }}</a></figcaption>
+	    {% else %}
+	    <figcaption>{{ page.quote-source }}</figcaption>
+	  {% endif %}
+	</figure>
+	{{ content }}
+
+	{% else %}
+
+	<figure class="quote">
+	  <blockquote>{{ post.quote-body }}</blockquote>
+	  {% if post.quote-link %}
+	    <figcaption><a href="{{post.quote-link}}">{{ post.quote-source }}</a></figcaption>
+	    {% else %}
+	    <figcaption>{{ post.quote-source }}</figcaption>
+	  {% endif %}
+	</figure>
+	{{ post.content }}
+
+{% endif %}

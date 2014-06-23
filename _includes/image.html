@@ -1,0 +1,13 @@
+{% if page.path contains '_posts' %}
+
+	<p><a href="/images/{{ page.image-source }}" class="commonplace-img-link"><img src=" /images/{{ page.image-source }}"></a></p>
+	    
+	{{ content }}
+
+	{% else %}
+
+	<p><a href="/images/{{ post.image-source }}" class="commonplace-img-link"><img src=" /images/{{ post.image-source }}"></a></p>
+	    
+	{{ post.content }}
+
+{% endif %}

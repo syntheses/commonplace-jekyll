@@ -1,0 +1,23 @@
+{% if page.path contains '_posts' %}
+
+	<figure>
+		<div class="video-box">
+			{{ page.video-source }}
+		</div>
+		<figcaption>{{ page.title }}</figcaption>
+	</figure>
+
+	{{ content }}
+
+	{% else %}
+
+	<figure>
+		<div class="video-box">
+			{{ post.video-source }}
+		</div>
+		<figcaption>{{ post.title }}</figcaption>
+	</figure>
+
+	{{ post.content }}
+
+{% endif %}

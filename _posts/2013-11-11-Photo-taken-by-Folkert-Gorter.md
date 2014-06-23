@@ -1,6 +1,6 @@
 ---
-layout: image
-class: image
+layout: post
+type: image
 image-source: mountains.jpg
 date: 2013-11-11 00:12:00
 ---

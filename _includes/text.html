@@ -1,0 +1,13 @@
+{% if page.path contains '_posts' %}
+
+	<h4>{{ page.title }}</h4>
+
+	{{ content }}
+
+	{% else %}
+
+	<h4>{{ post.title }}</h4>
+
+	{{ post.content }}
+
+{% endif %}

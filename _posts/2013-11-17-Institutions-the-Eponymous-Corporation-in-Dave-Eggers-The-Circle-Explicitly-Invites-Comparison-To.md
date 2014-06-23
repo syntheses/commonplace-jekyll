@@ -1,6 +1,6 @@
 ---
-layout: text
-class: text
+layout: post
+type: text
 title: Institutions the Eponymous Corporation in Dave Eggers’ “The Circle” Explicitly Invites Comparison To
 date: 2013-11-17 02:36:00
 ---
